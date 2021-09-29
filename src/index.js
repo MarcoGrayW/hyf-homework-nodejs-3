@@ -6,24 +6,12 @@ app.get('/', function(req, res){
     res.send('Hello World!');
 })
 
-<<<<<<< HEAD
-const users=[
-	{name:'Marco'},
-    {name:'Giovanni'},
-    {name:'Lupita'},
-	{name:'Miriam'}
-]
+const users= [];
 
 app.get('/users',function(req,res){
-	res.json({
-		success: true,
-		message: 'successfully got users. Nice!',
-		users: users
-	})
+	res.send(users);
 })
 
-=======
->>>>>>> 361b8126e9f59fb6eabd74f9c5596436a08718cf
 app.listen(3000,function()
 {console.log('server is listening');
 })
